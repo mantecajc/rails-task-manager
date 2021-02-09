@@ -2,9 +2,9 @@
 <% @tasks.each do |task| %>
   <p>
 	<% if task.completed?  %>
-	  Done!
+	  <strong>Done!</strong>
 	<% else %>
-	  Waiting...
+	  <strong>Waiting...</strong>
 	<% end %>
 	<%= link_to task.title, task_path(task) %> 
   </p>
